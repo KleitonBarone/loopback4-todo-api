@@ -18,7 +18,7 @@ const PING_RESPONSE: ResponseObject = {
         type: 'object',
         title: 'PingResponse',
         properties: {
-          greeting: {type: 'string'},
+          message: {type: 'string'},
           date: {type: 'string'},
           url: {type: 'string'},
           headers: {
@@ -46,7 +46,7 @@ export class PingController {
   ping(): object {
     // Reply with a greeting, the current time, the url, and request headers
     return {
-      greeting: 'Hello from LoopBack',
+      message: 'pong',
       date: new Date(),
       url: this.req.url,
       headers: Object.assign({}, this.req.headers),
