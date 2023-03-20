@@ -1,11 +1,9 @@
 {
   "ids": {
-    "Todo": 1
+    "Todo": 0
   },
   "models": {
     "Todo": {
-      "1": "{\"title\":\"Teste\",\"desc\":\"Um\",\"id\":1}",
-      "2": "{\"title\":\"Teste Dois\",\"desc\":\"Dois\",\"id\":2}"
     }
   }
 }

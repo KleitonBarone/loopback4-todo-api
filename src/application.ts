@@ -6,6 +6,7 @@ import {
 } from '@loopback/rest-explorer';
 import {RepositoryMixin} from '@loopback/repository';
 import {RestApplication} from '@loopback/rest';
+import {CrudRestComponent} from '@loopback/rest-crud'
 import {ServiceMixin} from '@loopback/service-proxy';
 import path from 'path';
 import {MySequence} from './sequence';
@@ -29,6 +30,7 @@ export class Loopback4TodoApiApplication extends BootMixin(
       path: '/explorer',
     });
     this.component(RestExplorerComponent);
+		this.component(CrudRestComponent);
 
     this.projectRoot = __dirname;
     // Customize @loopback/boot Booter Conventions here
